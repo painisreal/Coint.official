@@ -2,6 +2,7 @@
 @import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
 body {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 /* Basic */
@@ -137,6 +138,7 @@ a.menu-link { display: none; }
       border: 0;
     }
   }
+
 }
 
 /* Header */
@@ -160,7 +162,7 @@ a.menu-link { display: none; }
     height: 80px;
     position: fixed;
     z-index: 12;
-    width: 100%;
+    width: 100vw;
     top: 0;
 }
 
