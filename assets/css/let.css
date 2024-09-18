@@ -1,8 +1,22 @@
 @import url(fontawesome.css);
 @import url("<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+scrollbar-width: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
+  
+}
+
+.sections{
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Basic */
@@ -142,8 +156,7 @@ a.menu-link { display: none; }
 }
 
 /* Header */
-
-@media screen and (max-width: 1050px) {
+ @media screen and (max-width: 1050px) {
   .main-header .logo {
       padding-left: 30px!important;
   }
@@ -155,14 +168,14 @@ a.menu-link { display: none; }
   .main-menu li {
       margin-left: 5px!important;
   }
-}
+} 
 
 .main-header {
     background-color: rgba(22,34,57,0.95);
     height: 80px;
     position: fixed;
     z-index: 12;
-    width: 100vw;
+    width: 100%;
     top: 0;
 }
 
