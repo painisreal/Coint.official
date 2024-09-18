@@ -29,6 +29,7 @@ a {
 a:hover {
 	color: #AFCBFF;
     text-decoration: none;
+    
 }
 
 ul {
@@ -113,6 +114,7 @@ a.menu-link { display: none; }
     max-height: 20em;
     height: 20em;
     overflow-y: scroll;
+    scrollbar-width: none;
   }
   nav[role="navigation"] ul {
     top: 0;
@@ -199,6 +201,7 @@ a.menu-link { display: none; }
 .main-menu {
     float: right;
     padding-right: 60px;
+    /* display: none; */
 }
 
 .main-menu li {

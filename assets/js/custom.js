@@ -11,6 +11,23 @@
 	  return false;
 	});});
 
+// Select the elements
+const navElements = document.querySelectorAll('nav');
+const mainNav = document.querySelector('.main-nav');
+const menuLinks = document.querySelectorAll('.menu-link');
+
+// Add an event listener to each nav element
+navElements.forEach((nav) => {
+  nav.addEventListener('click', (e) => {
+    // Check if the clicked element is an anchor tag
+    if (e.target.tagName.toLowerCase() === 'a') {
+      // Toggle the 'active' class on the main nav and menu links
+      mainNav.classList.toggle('active');
+      // only toggle the class on the specific link that was clicked
+      e.target.classList.toggle('active');
+    }
+  });
+});
 
 	videoPopup();
 

@@ -1,24 +1,24 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxqMJET3sPMdoM9i2WP4A9nOOEu8PjJlENFNfmqqIt-P-kx-bDFASkVcl6IHzAqUc2qrw/exec'
-const form = document.forms['submit-to-google-sheet-']
-const msgt = document.getElementById('msgt');
-const msg = document.getElementById('msg');
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw0GRHrwtxwmiP6KlnpTc1pzuKv2jASzhNXz-cB6jN62GiFYC-UdV03-BkfdlJlN6e7pw/exec'
+const form = document.forms['submit-to-google-sheet-msg']
+const msgtr = document.getElementById('msgtr');
+const msgr = document.getElementById('msgr');
 form.addEventListener('submit', e => {
   e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
-        msg.innerHTML = "Message Sent."
+        msgr.innerHTML = "Message Sent."
         setTimeout(function(){
-                msg.innerHTML = ""
+                msgr.innerHTML = ""
         },5000)
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
     })
     
-    if (msg.innerHTML == "") {
-      function time(){
-        msgt.innerHTML = "Sending....."
+    if (msgr.innerHTML == "") {
+      function timemsg(){
+        msgtr.innerHTML = "Sending....."
         setTimeout(function(){
-                msgt.innerHTML = ""
+                msgtr.innerHTML = ""
         },3000)
     }}

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -19,9 +17,7 @@
     <link rel="stylesheet" href="assets/css/let.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-
   </head>
-
 <body>
 
    
@@ -32,7 +28,7 @@
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
-      <ul class="main-menu">
+      <ul class="main-menu" id="mainmenu">
         <li><a href="#section1">Home</a></li>
         <li class="has-submenu"><a href="#section2">About Us</a>
           <ul class="sub-menu">
@@ -47,7 +43,7 @@
       </ul>
     </nav>
   </header>
-<div class="sections">
+<div class="sections" id="section1">
   
     <!-- ***** Main Banner Area Start ***** -->
     <section class="section main-banner" id="top" id="section1">
@@ -77,9 +73,9 @@
                   <h4><i class="fa fa-pencil"></i>Industrial Courses</h4>
                 </div>
                 <div class="content-hide">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum impedit esse deleniti accusamus soluta fuga doloremque laudantium officia</p>
-                  <p class="hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias exercitationem, impedit quasi corrupti</p>
-                  <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+                  <p>Providing specialized training in the current technical stack, including students in real-time projects to survive in a company environment.</p>
+                  <p class="hidden-sm">Providing specialized training in the current technical stack, including students in real-time projects to survive in a company environment.</p>
+                  <div class="scroll-to-section"><a href="#section2">Details</a></div>
               </div>
               </div>
             </div>
@@ -91,8 +87,8 @@
                   <h4><i class="fa fa-graduation-cap"></i>Virtual Classes</h4>
                 </div>
                 <div class="content-hide">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum impedit esse deleniti accusamus soluta fuga doloremque laudantium officia</p>
-                  <p class="hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias exercitationem, impedit quasi corrupti</p>
+                  <p>To provide effective instruction, consider utilizing a digital platform to offer free online training classes. This can be supplemented by assigning tasks to individuals, allowing them to apply their knowledge and skills in a practical setting. This approach can help learners develop a deeper understanding of the material and prepare them for real-world challenges.</p>
+                  <p class="hidden-sm">To provide effective instruction, consider utilizing a digital platform to offer free online training classes. This can be supplemented by assigning tasks to individuals.</p>
                   <div class="scroll-to-section"><a href="#section3">Details</a></div>
               </div>
               </div>
@@ -105,9 +101,9 @@
                   <h4><i class="fa fa-book"></i>Real-time Meeting</h4>
                 </div>
                 <div class="content-hide">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias exercitationem, impedit quasi corrupti</p>
-                  <p class="hidden-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias exercitationem, impedit quasi corrupti</p>
-                  <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+                  <p>Allowing the particular individual to clarify his/her doubts and providing better communication between the student and tutor.</p>
+                  <p class="hidden-sm">Allowing the particular individual to clarify his/her doubts and providing better communication between the student and tutor.</p>
+                  <div class="scroll-to-section"><a href="#section4">Details</a></div>
               </div>
               </div>
             </div>
@@ -139,7 +135,7 @@
                     </div>
                     <div class="col-md-6">
                       <h4>Best Education</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, corporis obcaecati hic eius inventore est quidem! Fuga harum itaque labore, repudiandae, veniam rem omnis ad voluptate consectetur veritatis minus ducimus.</p>
+                      <p>To provide comprehensive training, we offer both software and hardware stack knowledge through a combination of online and offline resources. This enables learners to gain a solid foundation in both theoretical and practical aspects of the subject matter. Additionally, we arrange on-site visits with our clients to provide personalized support and guidance, allowing learners to apply their knowledge in real-world settings.</p>
                     </div>
                   </div>
                 </article>
@@ -150,8 +146,7 @@
                     </div>
                     <div class="col-md-6">
                       <h4>Top Class Syllabus</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis alias exercitationem, impedit quasi corrupti erero eoigjer erijgverwpowe wwoefwo fjeriofj wefwe gr</p> 
-                      <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                      <p>We design our syllabus to align with future tech demands, ensuring students acquire the required skill sets to thrive in an ever-evolving industry. By doing so, we equip them with the knowledge and expertise to tackle real-world challenges and stay ahead of the curve. Our forward-thinking approach enables students to develop a strong foundation in emerging technologies and prepares them for successful careers.</p> 
                     </div>
                   </div>
                 </article>
@@ -162,7 +157,7 @@
                     </div>
                     <div class="col-md-6">
                       <h4>Quality Meeting</h4>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga fugiat ad quidem itaque aut, officia quam eius tempora recusandae excepturi debitis, reiciendis consequatur maxime consectetur nihil odit, deserunt ullam praesentium.</p>
+                      <p>We prioritize hosting quality meetings with students, fostering an environment of open dialogue and active listening to facilitate effective communication. Through these interactions, we empower students to share their thoughts, address concerns, and receive personalized guidance, ultimately leading to a more collaborative and supportive learning experience.</p>
                     </div>
                   </div>
                 </article>
@@ -211,26 +206,30 @@
               <div class="top-content">
                 <h6>Register your free account and <em>get immediate</em> access to courses and mentors.</h6>
               </div>
-              <form id="contact" action="" method="get">
+              <form id="contact" action="" name="submit-to-google-sheet-acc" method="get">
                 <div class="row">
                   <div class="col-md-12">
                     <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                      <input name="name-reg" type="text" class="form-control" id="name" placeholder="Your Name" required="">
                     </fieldset>
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                      <input name="mail-reg" type="text" class="form-control" id="email" placeholder="Your Email" required="">
                     </fieldset>
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                      <input name="phone-number-reg" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
                     </fieldset>
                   </div>
                   <div class="col-md-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="button">Get it now</button>
+                      <button type="submit" id="form-submit-reg" class="button" onclick="time()">Get it now</button>
+                    <br>
+                    <br>
+                    <span id="msgt" style=" color: white;"></span>
+                    <span id="msg" style=" color: white;"></span>
                     </fieldset>
                   </div>
                 </div>
@@ -254,11 +253,11 @@
               <img src="assets/images/courses-01.jpg" alt="Course #1">
               <div class="down-content">
                 <h4>Digital Marketing</h4>
-                <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+                <p>"Unlock the power of digital marketing: Reach, engage, and convert your target audience into customers!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-01.png" alt="Author 1">
                 </div>
-                <div class="text-button-pay">
+                <div class="text-button-free">
                   <a href="#">Free<i class="fa fa-angle-double-right"></i></a>
                 </div>
               </div>
@@ -267,7 +266,7 @@
               <img src="assets/images/courses-02.jpg" alt="Course #2">
               <div class="down-content">
                 <h4>Business World</h4>
-                <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                <p>"Navigate the global landscape, build meaningful relationships, and drive business forward: Where opportunity meets innovation and success knows no limits!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-02.png" alt="Author 2">
                 </div>
@@ -280,11 +279,11 @@
               <img src="assets/images/courses-03.jpg" alt="Course #3">
               <div class="down-content">
                 <h4>Media Technology</h4>
-                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                <p>"Transform the digital landscape, captivate your audience, and push the boundaries of what's possible: Where creativity meets technology and innovation knows no bounds!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-03.png" alt="Author 3">
                 </div>
-                <div class="text-button-pay">
+                <div class="text-button-free">
                   <a href="#">Free<i class="fa fa-angle-double-right"></i></a>
                 </div>
               </div>
@@ -293,7 +292,7 @@
               <img src="assets/images/courses-04.jpg" alt="Course #4">
               <div class="down-content">
                 <h4>Communications</h4>
-                <p>Download free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+                <p>"Empower your voice: Learn to communicate effectively and unlock your full potential!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-04.png" alt="Author 4">
                 </div>
@@ -306,11 +305,11 @@
               <img src="assets/images/courses-05.jpg" alt="">
               <div class="down-content">
                 <h4>Business Ethics</h4>
-                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                <p>"Make a positive impact, foster a culture of integrity, and drive success: Where values meet vision and ethics meet excellence!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-05.png" alt="">
                 </div>
-                <div class="text-button-pay">
+                <div class="text-button-free">
                   <a href="#">Free<i class="fa fa-angle-double-right"></i></a>
                 </div>
               </div>
@@ -319,7 +318,7 @@
               <img src="assets/images/courses-01.jpg" alt="">
               <div class="down-content">
                 <h4>Photography</h4>
-                <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                <p>"Frame the moment, unleash your vision, and inspire the world: Where art meets technology and creativity knows no bounds!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-01.png" alt="">
                 </div>
@@ -332,7 +331,7 @@
               <img src="assets/images/courses-02.jpg" alt="">
               <div class="down-content">
                 <h4>Web Development</h4>
-                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                <p>"Craft exceptional online experiences: Where code meets creativity and innovation meets functionality!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-02.png" alt="">
                 </div>
@@ -344,12 +343,12 @@
             <div class="item">
               <img src="assets/images/courses-03.jpg" alt="">
               <div class="down-content">
-                <h4>Learn HTML CSS</h4>
-                <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
+                <h4>Backend Development</h4>
+                <p>"Crafting robust, scalable, and secure backend solutions: Where code meets innovation and functionality meets artistry!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-03.png" alt="">
                 </div>
-                <div class="text-button-pay">
+                <div class="text-button-free">
                   <a href="#">Free<i class="fa fa-angle-double-right"></i></a>
                 </div>
               </div>
@@ -358,11 +357,11 @@
               <img src="assets/images/courses-04.jpg" alt="">
               <div class="down-content">
                 <h4>Social Media</h4>
-                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                <p>"Join the conversation, share your story, and connect with the world: Where community meets creativity and inspiration knows no bounds!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-04.png" alt="">
                 </div>
-                <div class="text-button-pay">
+                <div class="text-button-free">
                   <a href="#">Free<i class="fa fa-angle-double-right"></i></a>
                 </div>
               </div>
@@ -371,7 +370,7 @@
               <img src="assets/images/courses-05.jpg" alt="">
               <div class="down-content">
                 <h4>Digital Arts</h4>
-                <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
+                <p>"Transform your imagination into stunning visuals: Explore the world of digital arts and bring your ideas to life!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-05.png" alt="">
                 </div>
@@ -384,11 +383,11 @@
               <img src="assets/images/courses-01.jpg" alt="">
               <div class="down-content">
                 <h4>Media Streaming</h4>
-                <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
+                <p>"Stream your way to endless entertainment: Movies, TV shows, music, and more at your fingertips!"</p>
                 <div class="author-image">
                   <img src="assets/images/author-01.png" alt="">
                 </div>
-                <div class="text-button-pay">
+                <div class="text-button-free">
                   <a href="#">Free<i class="fa fa-angle-double-right"></i></a>
                 </div>
               </div>
@@ -404,16 +403,18 @@
         <div class="row">
           <div class="col-md-6 align-self-center">
             <div class="left-content">
-              <span>Loreor em ipsumLorem ip sumLorem ipsu mLorem ipsum</span>
-              <h4>Lorem ips nostrum delectus rep odio.
-              <br><br>consequatur voluptatum necessitatibus ipsum labore autem debitis hic? Ab itaque nostrum delectus repudiandae animi est dfds</p>
-              <div class="main-button">External URL</div>
+              <u><span>About our supporting sponser</span></u>
+              <br><br> 
+              <h3>SpaceBTR is a online destination for space enthusiasts, <br>
+              offering a vast array of fascinating facts, news, and insights into the wonders of the universe. By providing accurate and up-to-date information on various aspects of space exploration, astronomy, and the cosmos, SpaceBTR aims to fuel curiosity, inspire new generations of space enthusiasts.</p>
+              <!-- <div class="main-button">External URL</div> -->
             </div>
           </div>
           <div class="col-md-6">
             <article class="video-item">
               <div class="video-caption">
-                <h4>funded by <a target="_blank" href="https://spacebtr.site">SpaceBTR</a> BaymaxProjects</h4>
+                <h4>funded by <a  style="-webkit-text-stroke: 2px black;
+" target="_blank" href="https://spacebtr.site">SpaceBTR</a> BaymaxProjects</h4>
               </div>
               <figure>
                <img src="assets/images/image.png"></a>
@@ -433,7 +434,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <form id="contact" action="" name="submit-to-google-sheet-acc" method="post">
+            <form id="contact-m" action="" name="submit-to-google-sheet-msg" method="post">
               <div class="row">
                 <div class="col-md-6">
                     <fieldset>
@@ -452,11 +453,11 @@
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="button" onclick="time()">Send Message Now</button>
+                    <button type="submit" id="form-submit" class="button" onclick="timemsg()">Send Message Now</button>
                     <br>
                     <br>
-                    <span id="msgt" style=" color: white;"></span>
-                    <span id="msg" style=" color: white;"></span>
+                    <span id="msgtr" style=" color: white;"></span>
+                    <span id="msgr" style=" color: white;"></span>
                   </fieldset>
                 </div>
               </div>
@@ -493,7 +494,7 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- <script src="assets/js/scriptRR.js"></script> -->
+    <script src="assets/js/scriptRR.js"></script>
     <script src="assets/js/scriptR.js"></script>
 </body>
 </html>
