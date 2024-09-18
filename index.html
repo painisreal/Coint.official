@@ -22,13 +22,13 @@
 
   </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
    
   <!--header-->
-  <header class="main-header clearfix" role="header">
+  <header class="main-header clearfix" role="header" >
     <div class="logo">
-      <a href="#"><em>L</em>ET.</a>
+      <a href="#"><em>CO</em>int</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
@@ -50,7 +50,7 @@
   </header>
 
   <!-- ***** Main Banner Area Start ***** -->
-  <section class="section main-banner" id="top" data-section="section1">
+  <section class="section main-banner" id="top" id="section1">
       <video autoplay muted loop id="bg-video">
           <source src="assets/images/course-video.mp4" type="video/mp4" />
       </video>
@@ -58,7 +58,7 @@
       <div class="video-overlay header-text">
           <div class="caption">
               <h6>Let’s Educate Together</h6>
-              <h2><em>Your</em> Classroom</h2>
+              <h2><em>Community</em> of interns</h2>
               <div class="main-button">
                   <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
               </div>
@@ -66,8 +66,7 @@
       </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
-
-
+   
   <section class="features">
     <div class="container">
       <div class="row">
@@ -117,7 +116,7 @@
     </div>
   </section>
 
-  <section class="section why-us" data-section="section2">
+  <section class="section why-us" id="section2">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -174,7 +173,7 @@
     </div>
   </section>
 
-  <section class="section coming-soon" data-section="section3">
+  <section class="section coming-soon" id="section3">
     <div class="container">
       <div class="row">
         <div class="col-md-7 col-xs-12">
@@ -242,7 +241,7 @@
     </div>
   </section>
 
-  <section class="section courses" data-section="section4">
+  <section class="section courses" id="section4">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -400,13 +399,13 @@
   </section>
   
 
-  <section class="section video" data-section="section5">
+  <section class="section video" id="section5">
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
           <div class="left-content">
             <span>Loreor em ipsumLorem ip sumLorem ipsu mLorem ipsum</span>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita id quisquam ex? Veniam consequatur voluptatum necessitatibus ipsum labore autem debitis hic? Ab itaque nostrum delectus repudiandae animi est dolores odio.
+            <h4>Lorem ips nostrum delectus rep odio.
             <br><br>consequatur voluptatum necessitatibus ipsum labore autem debitis hic? Ab itaque nostrum delectus repudiandae animi est dfds</p>
             <div class="main-button">External URL</div>
           </div>
@@ -425,7 +424,7 @@
     </div>
   </section>
 
-  <section class="section contact" data-section="section6">
+  <section class="section contact" id="section6">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -436,7 +435,7 @@
         <div class="col-md-6">
         
 
-          <form id="contact" action="" method="post">
+          <form id="contact" action="" name="submit-to-google-sheet-acc" method="post">
             <div class="row">
               <div class="col-md-6">
                   <fieldset>
@@ -455,14 +454,18 @@
               </div>
               <div class="col-md-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                  <button type="submit" id="form-submit" class="button" onclick="time()">Send Message Now</button>
+                  <br>
+                  <br>
+                  <span id="msgt" style=" color: white;"></span>
+                  <span id="msg" style=" color: white;"></span>
                 </fieldset>
               </div>
             </div>
           </form>
         </div>
         <div class="col-md-6">
-          <div id="map" style="width: 95vw; overflow: scroll; margin-right:20px;">
+          <div id="map" style="width: 95vw; overflow: hidden; margin-right:20px;">
             <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112203.86966373393!2d77.43359495078762!3d28.49848582102604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea64b8f89aef%3A0xec0ccabb5317962e!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1688831521689!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -491,13 +494,15 @@
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
+    <script src="assets/js/scriptR.js"></script>
     <!-- <script>
         $('.nav li:first').addClass('active');
 
         var showSection = function showSection(section, isAnimate) {
           var
           direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSection = $('.section').filter('[id="' + direction + '"]'),
           reqSectionPos = reqSection.offset().top - 0;
 
           if (isAnimate) {
